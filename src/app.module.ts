@@ -1,25 +1,16 @@
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UsersController } from './users/users.controller';
-import { UsersService } from './users/users.service';
-import { OwnersController } from './owners/owners.controller';
-import { OwnersService } from './owners/owners.service';
-import { PropertiesController } from './propierties/properties.controller';
-import { PropertiesService } from './propierties/properties.service';
+import { PropertyModule } from './property/property.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
     ServeStaticModule.forRoot({ rootPath: join(__dirname, '..', 'client') }),
+    PropertyModule,
+    UserModule,
   ],
-  controllers: [
-    AppController,
-    PropertiesController,
-    UsersController,
-    OwnersController,
-  ],
-  providers: [AppService, PropertiesService, UsersService, OwnersService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
