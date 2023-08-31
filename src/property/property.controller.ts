@@ -11,15 +11,18 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 
-import { PropertyService } from './properties.service';
-import { Property } from './Property';
-@Controller('/immovables')
+import { PropertyService } from './property.service';
+import { Property } from './property.interface';
+
+@Controller('/properties')
 export class PropertyController {
   constructor(private readonly propertyService: PropertyService) {}
+  
   @Get()
   getImmovables(): Promise<Property[]> {
     return this.propertyService.getImmovables();
   }
+  
   @Get('/:id')
   async getPropertyById(
     @Res() response,
@@ -34,6 +37,7 @@ export class PropertyController {
       return response.status(HttpStatus.OK).json(property);
     }
   }
+ 
   @Post()
   async postProperty(@Res() response, @Body() body): Promise<any> {
     const resFromServ = await this.propertyService.postProperty(body);
@@ -47,6 +51,7 @@ export class PropertyController {
       });
     }
   }
+ 
   @Delete('/:id')
   async deleteProperty(
     @Res() response,
@@ -64,6 +69,7 @@ export class PropertyController {
       });
     }
   }
+  
   @Put('/:id')
   @HttpCode(204)
   modifyInmueble(@Param('id') id: number, @Body() body): Promise<void> {

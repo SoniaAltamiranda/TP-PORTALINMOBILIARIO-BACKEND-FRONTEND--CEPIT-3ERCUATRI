@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Property } from './Property';
+import { Property } from './property.interface';
 
 const BASE_URL = 'http://localhost:3030/properties/';
 @Injectable()
