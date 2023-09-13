@@ -7,7 +7,11 @@
       "rooms": 3,
       "description": "Amplio apartamento en el corazón de la ciudad, ideal para vacaciones. Totalmente amueblado con excelentes vistas.",
       "price": 120,
-      "images": ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"],
+      "images": [
+        "imagen1.jpg",
+        "imagen2.jpg",
+        "imagen3.jpg"
+      ],
       "location": "123 Calle Principal, Centro de la Ciudad"
     },
     {
@@ -17,7 +21,11 @@
       "rooms": 4,
       "description": "Encantadora casa en un vecindario tranquilo. Amplio jardín, perfecto para familias. Cerca de escuelas y parques.",
       "price": 2000,
-      "images": ["imagen4.jpg", "imagen5.jpg", "imagen6.jpg"],
+      "images": [
+        "imagen4.jpg",
+        "imagen5.jpg",
+        "imagen6.jpg"
+      ],
       "location": "456 Avenida Elm, Área Suburbana"
     },
     {
@@ -27,7 +35,11 @@
       "rooms": 2,
       "description": "Apartamento moderno cerca de tiendas y restaurantes. Totalmente equipado con electrodomésticos de última generación.",
       "price": 90,
-      "images": ["imagen7.jpg", "imagen8.jpg", "imagen9.jpg"],
+      "images": [
+        "imagen7.jpg",
+        "imagen8.jpg",
+        "imagen9.jpg"
+      ],
       "location": "789 Calle Oak, Distrito Comercial"
     },
     {
@@ -37,7 +49,11 @@
       "rooms": 5,
       "description": "Elegante piso con habitaciones espaciosas y vistas espectaculares al mar. Incluye estacionamiento privado.",
       "price": 3000,
-      "images": ["imagen10.jpg", "imagen11.jpg", "imagen12.jpg"],
+      "images": [
+        "imagen10.jpg",
+        "imagen11.jpg",
+        "imagen12.jpg"
+      ],
       "location": "1234 Calle Ocean, Área Costera"
     },
     {
@@ -47,7 +63,11 @@
       "rooms": 1,
       "description": "Loft moderno en el centro histórico de la ciudad. Diseño de vanguardia y cerca de puntos de interés cultural.",
       "price": 75,
-      "images": ["imagen13.jpg", "imagen14.jpg", "imagen15.jpg"],
+      "images": [
+        "imagen13.jpg",
+        "imagen14.jpg",
+        "imagen15.jpg"
+      ],
       "location": "567 Calle Histórica, Centro"
     },
     {
@@ -57,7 +77,11 @@
       "rooms": 6,
       "description": "Casa grande con todas las comodidades y una piscina privada. Ideal para familias que disfrutan del aire libre.",
       "price": 2500,
-      "images": ["imagen16.jpg", "imagen17.jpg", "imagen18.jpg"],
+      "images": [
+        "imagen16.jpg",
+        "imagen17.jpg",
+        "imagen18.jpg"
+      ],
       "location": "789 Valle Verde, Área Suburbana"
     },
     {
@@ -67,7 +91,11 @@
       "rooms": 2,
       "description": "Apartamento amueblado en el corazón de la ciudad. Perfecto para estancias cortas y cómodas.",
       "price": 110,
-      "images": ["imagen19.jpg", "imagen20.jpg", "imagen21.jpg"],
+      "images": [
+        "imagen19.jpg",
+        "imagen20.jpg",
+        "imagen21.jpg"
+      ],
       "location": "123 Avenida Central, Centro de la Ciudad"
     },
     {
@@ -77,7 +105,11 @@
       "rooms": 7,
       "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
       "price": 2800,
-      "images": ["imagen22.jpg", "imagen23.jpg", "imagen24.jpg"],
+      "images": [
+        "imagen22.jpg",
+        "imagen23.jpg",
+        "imagen24.jpg"
+      ],
       "location": "456 Camino de la Montaña, Afueras"
     },
     {
@@ -87,7 +119,11 @@
       "rooms": 1,
       "description": "Estudio con diseño único en el corazón del distrito cultural. Cerca de galerías de arte y teatros.",
       "price": 80,
-      "images": ["imagen25.jpg", "imagen26.jpg", "imagen27.jpg"],
+      "images": [
+        "imagen25.jpg",
+        "imagen26.jpg",
+        "imagen27.jpg"
+      ],
       "location": "567 Avenida del Arte, Distrito Cultural"
     },
     {
@@ -97,7 +133,11 @@
       "rooms": 4,
       "description": "Apartamento de lujo con acabados premium y comodidades modernas. Ubicado en una zona exclusiva.",
       "price": 3500,
-      "images": ["imagen28.jpg", "imagen29.jpg", "imagen30.jpg"],
+      "images": [
+        "imagen28.jpg",
+        "imagen29.jpg",
+        "imagen30.jpg"
+      ],
       "location": "123 Calle del Lujo, Zona Exclusiva"
     },
     {
@@ -108,7 +148,11 @@
       "rooms": 7,
       "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
       "price": 2800,
-      "images": ["imagen22.jpg", "imagen23.jpg", "imagen24.jpg"]
+      "images": [
+        "imagen22.jpg",
+        "imagen23.jpg",
+        "imagen24.jpg"
+      ]
     },
     {
       "id": 12,
@@ -118,16 +162,19 @@
       "rooms": 5,
       "description": "Amplio apartamento en el corazón de la ciudad, ideal para vacaciones. Totalmente amueblado con excelentes vistas.",
       "price": 120,
-      "images": ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"]
+      "images": [
+        "imagen1.jpg",
+        "imagen2.jpg",
+        "imagen3.jpg"
+      ]
     }
   ],
-
   "users": [
     {
-      "id": 1,
-      "name": "Black Panther 2",
+      "name": "Sonia 2",
       "email": "WPoSiempre@yahoo.com",
-      "phone": "+1458285242"
+      "phone": "+1458285242",
+      "id": 1
     },
     {
       "id": 2,
@@ -155,33 +202,21 @@
     },
     {
       "id": 6,
-      "name": "Eren Yeager",
-      "email": "ErenY@gmail.com",
-      "phone": "+3256977456"
-    },
-    {
-      "id": 7,
-      "name": "Oliver Atom",
-      "email": "elbalonesmiamigo@gmail.com",
-      "phone": "+32569747456"
-    },
-    {
-      "id": 8,
-      "name": "Sherlock Holmes",
-      "email": "irene@gmail.com",
-      "phone": "+32569773456"
-    },
-    {
-      "id": 9,
       "name": "Jhon Watson",
       "email": "212B@gmail.com",
       "phone": "+32569773456"
     },
     {
-      "id": 10,
+      "name": "Irene Adler",
+      "email": "sher@gmail.com",
+      "phone": "+256698454544",
+      "id": 8
+    },
+    {
       "name": "Lionel Andres Messi",
       "email": "CampeondelMundo@gmail.com",
-      "phone": "+32569773456"
+      "phone": "+32569773456",
+      "id": 9
     }
   ]
 }
