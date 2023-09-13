@@ -7,7 +7,11 @@
       "rooms": 3,
       "description": "Spacious apartment in the heart of the city, ideal for vacations. Fully furnished with excellent views.",
       "price": 120,
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": [
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg"
+      ],
       "location": "123 Main Street, City Center"
     },
     {
@@ -17,7 +21,11 @@
       "rooms": 4,
       "description": "Charming house in a quiet neighborhood. Spacious garden, perfect for families. Close to schools and parks.",
       "price": 2000,
-      "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
+      "images": [
+        "image4.jpg",
+        "image5.jpg",
+        "image6.jpg"
+      ],
       "location": "456 Elm Avenue, Suburban Area"
     },
     {
@@ -27,7 +35,11 @@
       "rooms": 2,
       "description": "Modern apartment near shops and restaurants. Fully equipped with state-of-the-art appliances.",
       "price": 90,
-      "images": ["image7.jpg", "image8.jpg", "image9.jpg"],
+      "images": [
+        "image7.jpg",
+        "image8.jpg",
+        "image9.jpg"
+      ],
       "location": "789 Oak Street, Commercial District"
     },
     {
@@ -37,7 +49,11 @@
       "rooms": 5,
       "description": "Elegant flat with spacious rooms and spectacular sea views. Includes private parking.",
       "price": 3000,
-      "images": ["image10.jpg", "image11.jpg", "image12.jpg"],
+      "images": [
+        "image10.jpg",
+        "image11.jpg",
+        "image12.jpg"
+      ],
       "location": "1234 Ocean Drive, Coastal Area"
     },
     {
@@ -47,18 +63,12 @@
       "rooms": 1,
       "description": "Modern loft in the historic center of the city. Cutting-edge design and close to cultural points of interest.",
       "price": 75,
-      "images": ["image13.jpg", "image14.jpg", "image15.jpg"],
+      "images": [
+        "image13.jpg",
+        "image14.jpg",
+        "image15.jpg"
+      ],
       "location": "567 Historic Street, Downtown"
-    },
-    {
-      "id": 6,
-      "title": "Spacious House with Pool",
-      "type": "long-term rental",
-      "rooms": 6,
-      "description": "Large house with all amenities and a private pool. Ideal for families who enjoy the outdoors.",
-      "price": 2500,
-      "images": ["image16.jpg", "image17.jpg", "image18.jpg"],
-      "location": "789 Green Valley, Suburban Area"
     },
     {
       "id": 7,
@@ -67,7 +77,11 @@
       "rooms": 2,
       "description": "Furnished apartment in the heart of the city. Perfect for short and comfortable stays.",
       "price": 110,
-      "images": ["image19.jpg", "image20.jpg", "image21.jpg"],
+      "images": [
+        "image19.jpg",
+        "image20.jpg",
+        "image21.jpg"
+      ],
       "location": "123 Central Avenue, City Center"
     },
     {
@@ -77,7 +91,11 @@
       "rooms": 7,
       "description": "Lovely chalet in a peaceful setting. Extensive garden and panoramic views of the surrounding nature.",
       "price": 2800,
-      "images": ["image22.jpg", "image23.jpg", "image24.jpg"],
+      "images": [
+        "image22.jpg",
+        "image23.jpg",
+        "image24.jpg"
+      ],
       "location": "456 Mountain Road, Outskirts"
     },
     {
@@ -87,7 +105,11 @@
       "rooms": 1,
       "description": "Studio with unique design in the heart of the cultural district. Close to art galleries and theaters.",
       "price": 80,
-      "images": ["image25.jpg", "image26.jpg", "image27.jpg"],
+      "images": [
+        "image25.jpg",
+        "image26.jpg",
+        "image27.jpg"
+      ],
       "location": "567 Art Avenue, Cultural District"
     },
     {
@@ -97,11 +119,29 @@
       "rooms": 4,
       "description": "Luxury apartment with premium finishes and modern amenities. Located in an exclusive area.",
       "price": 3500,
-      "images": ["image28.jpg", "image29.jpg", "image30.jpg"],
+      "images": [
+        "image28.jpg",
+        "image29.jpg",
+        "image30.jpg"
+      ],
       "location": "123 Luxury Lane, Exclusive Area"
+    },
+    {
+      "id": 11,
+      "title": "Chalet in the Outskirts",
+      "type": "long-term rental",
+      "location": "456 Mountain Road, Outskirts",
+      "rooms": 7,
+      "description": "Lovely chalet in a peaceful setting. Extensive garden and panoramic views of the surrounding nature.",
+      "price": 2800,
+      "images": [
+        "image22.jpg",
+        "image23.jpg",
+        "image24.jpg"
+      ]
     }
   ],
-
+  
   "users": [
     {
       "id": 1,
@@ -120,50 +160,43 @@
       "name": "Uzumaki Naruto",
       "email": "7moHoka@gmail.com",
       "phone": "+3256977456"
-    }
-    ,
+    },
     {
       "id": 4,
       "name": "Monkey D. Luffy",
       "email": "OneP@gmail.com",
       "phone": "+32569774S56"
-    }
-    ,
+    },
     {
       "id": 5,
       "name": "Levi Arkeman",
       "email": "acorazado@gmail.com",
       "phone": "+32536977456"
-    }
-    ,
+    },
     {
       "id": 6,
       "name": "Eren Yeager",
       "email": "ErenY@gmail.com",
       "phone": "+3256977456"
-    }
-    ,
+    },
     {
       "id": 7,
       "name": "Oliver Atom",
       "email": "elbalonesmiamigo@gmail.com",
       "phone": "+32569747456"
-    }
-    ,
+    },
     {
       "id": 8,
       "name": "Sherlock Holmes",
       "email": "irene@gmail.com",
       "phone": "+32569773456"
-    }
-    ,
+    },
     {
       "id": 9,
       "name": "Jhon Watson",
       "email": "221BBakerStreet@gmail.com",
       "phone": "+32956977456"
-    }
-    ,
+    },
     {
       "id": 10,
       "name": "Namikaze Minato",

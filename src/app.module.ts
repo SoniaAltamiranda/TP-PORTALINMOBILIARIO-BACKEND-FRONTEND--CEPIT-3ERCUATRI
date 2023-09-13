@@ -6,11 +6,14 @@ import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
-    ServeStaticModule.forRoot({ rootPath: join(__dirname, '..', 'client') }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'client'),
+      serveRoot: "/"
+    }),
     PropertyModule,
     UserModule,
   ],
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule { }
