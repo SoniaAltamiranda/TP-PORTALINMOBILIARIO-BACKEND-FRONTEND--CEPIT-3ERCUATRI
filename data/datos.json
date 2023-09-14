@@ -2,130 +2,131 @@
   "properties": [
     {
       "id": 1,
-      "title": "Beautiful Apartment in the Center",
-      "type": "temporary rental",
+      "title": "Hermoso Apartamento en el Centro",
+      "type": "alquiler temporal",
       "rooms": 3,
-      "description": "Spacious apartment in the heart of the city, ideal for vacations. Fully furnished with excellent views.",
+      "description": "Amplio apartamento en el corazón de la ciudad, ideal para vacaciones. Completamente amueblado con excelentes vistas.",
       "price": 120,
       "images": [
-        "image1.jpg",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzYSUyMG1vZGVybmF8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
         "image2.jpg",
         "image3.jpg"
       ],
-      "location": "123 Main Street, City Center"
+      "location": "Buenos Aires, Argentina"
     },
     {
       "id": 2,
-      "title": "Cozy House in Residential Neighborhood",
-      "type": "long-term rental",
+      "title": "Acogedora Casa en Barrio Residencial",
+      "type": "alquiler a largo plazo",
       "rooms": 4,
-      "description": "Charming house in a quiet neighborhood. Spacious garden, perfect for families. Close to schools and parks.",
+      "description": "Encantadora casa en un barrio tranquilo. Amplio jardín, perfecto para familias. Cerca de escuelas y parques.",
       "price": 2000,
       "images": [
-        "image4.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1du4MBCb6HDHDvW7GtG41Ibu0tMFEfXvgsnV58-B&s",
         "image5.jpg",
         "image6.jpg"
       ],
-      "location": "456 Elm Avenue, Suburban Area"
+      "location": "Córdoba, Argentina"
     },
     {
       "id": 3,
-      "title": "Modern Apartment in Commercial Area",
-      "type": "temporary rental",
+      "title": "Moderno Apartamento en Área Comercial",
+      "type": "alquiler temporal",
       "rooms": 2,
-      "description": "Modern apartment near shops and restaurants. Fully equipped with state-of-the-art appliances.",
+      "description": "Apartamento moderno cerca de tiendas y restaurantes. Completamente equipado con electrodomésticos de última generación.",
       "price": 90,
       "images": [
-        "image7.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfPTzHhy8kUVZr7x-IwMJoyf4JTT8q0U9-Q&usqp=CAU",
         "image8.jpg",
         "image9.jpg"
       ],
-      "location": "789 Oak Street, Commercial District"
+      "location": "Mendoza, Argentina"
     },
     {
       "id": 4,
-      "title": "Elegant Seaview Flat",
-      "type": "long-term rental",
+      "title": "Elegante Piso con Vista al Mar",
+      "type": "alquiler a largo plazo",
       "rooms": 5,
-      "description": "Elegant flat with spacious rooms and spectacular sea views. Includes private parking.",
+      "description": "Elegante piso con habitaciones espaciosas y vistas espectaculares al mar. Incluye estacionamiento privado.",
       "price": 3000,
       "images": [
-        "image10.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJyqVx9PviD1rqIsUhLtHRVFDAbv6DOVm8Q&usqp=CAU",
         "image11.jpg",
         "image12.jpg"
       ],
-      "location": "1234 Ocean Drive, Coastal Area"
+      "location": "Mar del Plata, Argentina"
     },
     {
       "id": 5,
-      "title": "Modern Loft in Historic Center",
-      "type": "temporary rental",
+      "title": "Loft Moderno en el Centro Histórico",
+      "type": "alquiler temporal",
       "rooms": 1,
-      "description": "Modern loft in the historic center of the city. Cutting-edge design and close to cultural points of interest.",
+      "description": "Loft moderno en el centro histórico de la ciudad. Diseño de vanguardia y cerca de puntos de interés cultural.",
       "price": 75,
       "images": [
-        "image13.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8FN_4KcJsDgfzwA7iEtshe08ndK9yp_ZEQ&usqp=CAU",
         "image14.jpg",
         "image15.jpg"
       ],
-      "location": "567 Historic Street, Downtown"
+      "location": "Mendoza, Argentina"
     },
     {
       "id": 7,
-      "title": "Furnished Central Apartment",
-      "type": "temporary rental",
+      "title": "Apartamento Amueblado en el Centro",
+      "type": "alquiler temporal",
       "rooms": 2,
-      "description": "Furnished apartment in the heart of the city. Perfect for short and comfortable stays.",
+      "description": "Apartamento amueblado en el corazón de la ciudad. Perfecto para estancias cortas y cómodas.",
       "price": 110,
       "images": [
-        "image19.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjo5GGlH4cxVGufP2XRTrIRvH4DUxaO07SzQ&usqp=CAU",
         "image20.jpg",
         "image21.jpg"
       ],
-      "location": "123 Central Avenue, City Center"
+      "location": "Salta, Argentina"
     },
     {
       "id": 8,
-      "title": "Chalet in the Outskirts",
-      "type": "long-term rental",
+      "title": "Chalet en las Afueras",
+      "type": "alquiler a largo plazo",
       "rooms": 7,
-      "description": "Lovely chalet in a peaceful setting. Extensive garden and panoramic views of the surrounding nature.",
+      "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
       "price": 2800,
       "images": [
-        "image22.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzybr6iQ3hgSdQSyBR1DmXlXf0i_M_rGeKVQ&usqp=CAU",
         "image23.jpg",
         "image24.jpg"
       ],
-      "location": "456 Mountain Road, Outskirts"
+      "location": "Bariloche, Argentina"
     },
     {
       "id": 9,
-      "title": "Stylish Studio in Cultural Center",
-      "type": "temporary rental",
+      "title": "Estudio con Estilo en el Centro Cultural",
+      "type": "alquiler temporal",
       "rooms": 1,
-      "description": "Studio with unique design in the heart of the cultural district. Close to art galleries and theaters.",
+      "description": "Estudio con diseño único en el corazón del distrito cultural. Cerca de galerías de arte y teatros.",
       "price": 80,
       "images": [
-        "image25.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmyjQf4jgiDSp5WMv51rX_aOxPJ9CX6D1XA&usqp=CAU",
         "image26.jpg",
         "image27.jpg"
       ],
-      "location": "567 Art Avenue, Cultural District"
+      "location": "Salta, Argentina"
     },
     {
       "id": 11,
-      "title": "Casa nueva modificada otra vez con el id adelante",
-      "type": "long-term rental",
+      "title": "Apartamento de Lujo en Área Exclusiva",
+      "type": "alquiler a largo plazo",
       "rooms": 4,
-      "description": "Luxury apartment with premium finishes and modern amenities. Located in an exclusive area.",
+      "description": "Apartamento de lujo con acabados de primera y comodidades modernas. Ubicado en una zona exclusiva.",
       "price": 3500,
       "images": [
-        "image.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4whCiqfHUu3ivUT4xHhjqpBDTmnYqc6sBAw&usqp=CAU",
         "image.jpg",
         "image.jpg"
       ],
-      "location": "123 Luxury Lane, Exclusive Area"
+      "location": "Neuquén, Argentina"
     }
+
   ],
   "users": [
     {
