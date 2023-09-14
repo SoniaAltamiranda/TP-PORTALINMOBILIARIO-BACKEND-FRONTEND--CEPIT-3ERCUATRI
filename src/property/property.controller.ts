@@ -50,7 +50,6 @@ export class PropertyController {
   }
 
   @Put('/:id')
-  //@HttpCode(204)
   modifyInmueble(@Param('id') id: number, @Body() propertyDto : PropertyDto): Promise<void> {
     return this.propertyService.modifyPropertyById(id, propertyDto);
   }
