@@ -9,4 +9,7 @@ export class UserDto{
     email: string;
     @IsString()
     phone: string;
+    @IsString()
+    password: string;
+    
 }

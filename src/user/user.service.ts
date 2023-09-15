@@ -3,7 +3,8 @@ import {
   BadRequestException,
   Injectable,
   NotFoundException,
- 
+  Logger,
+
 } from '@nestjs/common';
 import { iUser } from './user.interface';
 import { UserDto } from './user.dto';
@@ -12,6 +13,25 @@ const BASE_URL = 'http://localhost:3030/users/';
 
 @Injectable()
 export class UserService {
+
+  private readonly logger = new Logger(UserService.name);
+
+  async authenticateUser(name: string, password: string): Promise<boolean> {
+    try {
+      const res = await fetch(BASE_URL + 'authenticate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, password }),
+      });
+
+      this.logger.log(`Authentication request sent to ${BASE_URL} with name: ${name}`);
+      return res.status === 200;
+    } catch (error) {
+      this.logger.error('An error occurred while authenticating the user:', error);
+      throw new Error('An error occurred while authenticating the user.');
+    }
+  }
+
   async getUsers(): Promise<iUser[]> {
     try {
       const res = await fetch(BASE_URL);
@@ -28,7 +48,7 @@ export class UserService {
     }
   }
 
-  async getUserByName(name: string): Promise<UserDto[]> {
+  async getUserByName(name: string): Promise<UserDto | null> {
     try {
       const res = await fetch(BASE_URL);
       if (!res.ok) {
@@ -37,13 +57,10 @@ export class UserService {
         );
       }
       const allUsers = await res.json();
-      const filteredByName = allUsers.filter((usr) =>
-        usr.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()),
+      const foundUser = allUsers.find((usr) =>
+        usr.name.toLocaleLowerCase() === name.toLocaleLowerCase(),
       );
-      if (!filteredByName.length) {
-        throw new NotFoundException('Usuario no encontrado');
-      }
-      return filteredByName;
+      return foundUser || null; // Devuelve el usuario encontrado o null si no se encuentra ninguno
     } catch (error) {
       throw new BadRequestException(
         'Error al buscar usuarios por nombre',
@@ -60,7 +77,7 @@ export class UserService {
         );
       }
       const parsed = await res.json();
-      if (!Object.keys(parsed).length) return ;
+      if (!Object.keys(parsed).length) return;
       return parsed;
     } catch (error) {
       throw new BadRequestException(
@@ -72,7 +89,7 @@ export class UserService {
   private async setId(): Promise<number> {
     try {
       const users = await this.getUsers();
-      const id = users.pop().id+1;
+      const id = users.pop().id + 1;
       return id;
     } catch (error) {
       throw new BadRequestException(
