@@ -4,7 +4,6 @@ import {
   Param,
   Post,
   Delete,
-  Res,
   Body,
   HttpCode,
   Put,
@@ -16,36 +15,25 @@ import { UserService } from './user.service';
 
 import { UserDto } from './user.dto';
 
-@Controller('/users')
+@Controller('users')
 export class UserController {
-  constructor(private readonly userService: UserService) { }
+  constructor(private readonly userService: UserService) {}
 
-  @Post('/authenticate')
-  async authenticateUser(@Res() response, @Body() body:{name: string, password: string }): Promise<any> {
-    try {
-      const user = await this.userService.getUserByName(body.name);
-      if (user.name === body.name && user.password === body.password) {
-        return response.status(HttpStatus.OK).json({
-          message: 'Authentication successful.',
-        });
-      } else {
-        return response.status(HttpStatus.UNAUTHORIZED).json({
-          error: 'Authentication failed.',
-        });
-      }
-    } catch (error) {
-      return response.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
-        error: 'An error occurred during authentication.',
-      });
-    }
+  @Get()
+  getUsers(@Query('name') name?: string): Promise<UserDto[]> {
+    if (!name) return this.userService.getUsers();
+    return this.userService.getUserByName(name); //tengo que pasar el query param NAME
   }
 
-  async getUserByName(@Query('name') name?: string): Promise<UserDto | null> {
-    if (!name) return null; // Retorna null si no se proporciona un nombre
-    return this.userService.getUserByName(name);
+  @Get()
+async getUsersByNameAndPassword(@Query('name') name?: string, @Query('password') password?: string): Promise<UserDto[]> {
+  if (!name || !password) {
+    return this.userService.getUsers();
   }
+  return this.userService.getUserByNameAndPassword(name, password);
+}
 
-  @Get('/:id') //inyectamos el parametro id
+  @Get('/:id')
   async getUserById(
     @Param(
       'id',

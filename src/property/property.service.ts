@@ -1,66 +1,112 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { Property } from './property.interface';
+import { PropertyDto } from './property.dto';
 
 const BASE_URL = 'http://localhost:3030/properties/';
 @Injectable()
 export class PropertyService {
-  async getImmovables(): Promise<Property[]> {
-    const res = await fetch(BASE_URL);
-    const parsed = await res.json();
-    return parsed;
+
+
+  async getProperties(): Promise<Property[]> {
+    try {
+      const res = await fetch(BASE_URL);
+      if (!res.ok) throw new BadRequestException()
+      const parsed = await res.json();
+      return parsed;
+    }
+    catch (error) {
+      throw new BadRequestException()
+    }
   }
+
+  async getByLocation(location: string): Promise<Property[]> {
+    try {
+      const allProperties = await this.getProperties();
+      const filtByLocation = allProperties.filter((properties) =>
+        properties.location.toLocaleLowerCase().includes(location.toLocaleLowerCase()));
+      if (!filtByLocation.length) throw new NotFoundException(`Sin propiedades en alquiler en ${location}.`)
+      return filtByLocation;
+    }
+    catch (error) {
+      throw new NotFoundException(`Sin propiedades en ${location}`);
+    };
+  }
+
   async getPropertyById(id: number): Promise<Property> {
-    const res = await fetch(BASE_URL + id);
-    const parsed = await res.json();
-    return parsed;
+    try {
+      const res = await fetch(BASE_URL + id);
+      if (!res.ok) throw new BadRequestException();
+      const parsed = await res.json();
+      if (Object.keys(parsed).length) return parsed;
+    }
+    catch (error) {
+      throw new NotFoundException(`La propiedad con el ID:${id}, no existe.`)
+    }
   }
 
   private async setId(): Promise<number> {
-    const immovables = await this.getImmovables();
-    const id = immovables.pop().id + 1;
+    const properties = await this.getProperties();
+    const id = properties.pop().id + 1;
     return id;
   }
-  async postProperty(property: Property): Promise<Property> {
-    const id = await this.setId();
-    const { title, type, location, rooms, description, price, images } =
-      property;
-    const newProperty = {
-      id,
-      title,
-      type,
-      location,
-      rooms,
-      description,
-      price,
-      images,
-    };
-    const res = await fetch(BASE_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newProperty),
-    });
-    const parsed = res.json();
-    return parsed;
+
+  async postProperty(property: PropertyDto): Promise<Property> {
+
+    try {
+      const id = await this.setId();
+      const { title, type, location, rooms, description, price, images } =
+        property;
+      const newProperty = { id, title, type, location, rooms, description, price, images };
+      const res = await fetch(BASE_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newProperty),
+      });
+      if (!res.ok) throw new BadRequestException();
+      const parsed = res.json();
+      return parsed;
+    }
+    catch (error) {
+      throw new BadRequestException(`No se pudo cargar la propiedad.`)
+    }
   }
+
   async deleteProperty(id: number) {
-    const res = await fetch(BASE_URL + id, {
-      method: 'DELETE',
-    });
-    const parsed = res.json();
-    return parsed;
+    try {
+      const res = await fetch(BASE_URL + id, {
+        method: 'DELETE',
+      });
+      if (!res.ok) throw new BadRequestException(`La Propiedad con el ID:${id}, no existe.`);
+      return `Se ha eliminado la propiedad correctamente.`
+    }
+    catch (error) {
+      throw new BadRequestException(`La Propiedad con el ID:${id}, no existe.`);
+    }
   }
-  async modifyPropertyById(id: number, body: Property): Promise<void> {
-    const isProperty = await this.getPropertyById(id);
-    if (!Object.keys(isProperty).length) return;
-    const modifiedProperty = { ...body, id };
-    await fetch(BASE_URL + id, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(modifiedProperty),
-    });
+
+  async modifyPropertyById(id: number, propertyDto: PropertyDto): Promise<any> {
+    try {
+      const isProperty = await this.getPropertyById(id);
+      if (!isProperty) {
+        throw new NotFoundException(`La propiedad con el ID: ${id} no existe`)
+      }
+      const modifiedProperty = { id, ...propertyDto };
+      console.log(modifiedProperty)
+      const res = await fetch(BASE_URL + id, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(modifiedProperty),
+      });
+      if (res.ok) {
+        return `La propiedad con el ID:${id} ha modificado correctamente`;
+      }
+    }
+    catch (error) {
+      throw new BadRequestException(`No se pudo actualizar la propiedad con el ID:${id}.`)
+    }
   }
 }

@@ -6,73 +6,49 @@ import {
   Body,
   Delete,
   Put,
-  HttpCode,
-  Res,
   HttpStatus,
+  ParseIntPipe,
+  Query
 } from '@nestjs/common';
 
 import { PropertyService } from './property.service';
 import { Property } from './property.interface';
+import { PropertyDto } from './property.dto';
 
 @Controller('/properties')
 export class PropertyController {
-  constructor(private readonly propertyService: PropertyService) {}
-  
+  constructor(private readonly propertyService: PropertyService) { }
+
   @Get()
-  getImmovables(): Promise<Property[]> {
-    return this.propertyService.getImmovables();
+  getProperties(@Query('location') location?: string): Promise<Property[]> {
+    if(!location) return this.propertyService.getProperties();
+    return this.propertyService.getByLocation(location);
   }
-  
+
   @Get('/:id')
   async getPropertyById(
-    @Res() response,
-    @Param('id') id: number,
-  ): Promise<Property> {
-    const property = await this.propertyService.getPropertyById(id);
-    if (!property.id) {
-      return response.status(HttpStatus.NOT_FOUND).json({
-        error: `La propiedad con el ID:${id} no existe.`,
-      });
-    } else {
-      return response.status(HttpStatus.OK).json(property);
-    }
+    @Param('id', new ParseIntPipe({
+      errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE
+    })) id: number): Promise<Property> {
+    return this.propertyService.getPropertyById(id);
   }
- 
+
   @Post()
-  async postProperty(@Res() response, @Body() body): Promise<any> {
-    const resFromServ = await this.propertyService.postProperty(body);
-    if (Object.keys(resFromServ).length) {
-      return response.status(HttpStatus.CREATED).json({
-        message: 'El inmueble se ha cargado correctamente.',
-      });
-    } else {
-      return response.status(HttpStatus.BAD_REQUEST).json({
-        error: `La solicitud no se pudo procesar, el formato es incorrecto`,
-      });
-    }
+  async postProperty(@Body() propertyDto: PropertyDto): Promise<any> {
+    return this.propertyService.postProperty(propertyDto);
   }
- 
+
   @Delete('/:id')
   async deleteProperty(
-    @Res() response,
-    @Param('id') id: number,
-  ): Promise<void> {
-    let propertyToDelete = await this.propertyService.getPropertyById(id);
-    if (!Object.keys(propertyToDelete).length) {
-      return response.status(HttpStatus.NOT_FOUND).json({
-        error: `El inmueble con el ID:${id} no existe.`,
-      });
-    } else {
-      propertyToDelete = await this.propertyService.deleteProperty(id);
-      return response.status(HttpStatus.OK).json({
-        message: `El inmuble se ha elminado correctamente`,
-      });
-    }
+    @Param('id', new ParseIntPipe({
+      errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE
+    })) id: number
+  ): Promise<any> {
+      return this.propertyService.deleteProperty(id)
   }
-  
+
   @Put('/:id')
-  @HttpCode(204)
-  modifyInmueble(@Param('id') id: number, @Body() body): Promise<void> {
-    return this.propertyService.modifyPropertyById(id, body);
+  modifyInmueble(@Param('id') id: number, @Body() propertyDto : PropertyDto): Promise<void> {
+    return this.propertyService.modifyPropertyById(id, propertyDto);
   }
 }

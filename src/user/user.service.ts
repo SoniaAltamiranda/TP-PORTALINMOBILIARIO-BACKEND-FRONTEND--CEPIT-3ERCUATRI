@@ -1,38 +1,16 @@
-
 import {
   BadRequestException,
   Injectable,
   NotFoundException,
-  Logger,
 
 } from '@nestjs/common';
-import { iUser } from './user.interface';
 import { UserDto } from './user.dto';
 
 const BASE_URL = 'http://localhost:3030/users/';
 
 @Injectable()
 export class UserService {
-
-  private readonly logger = new Logger(UserService.name);
-
-  async authenticateUser(name: string, password: string): Promise<boolean> {
-    try {
-      const res = await fetch(BASE_URL + 'authenticate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, password }),
-      });
-
-      this.logger.log(`Authentication request sent to ${BASE_URL} with name: ${name}`);
-      return res.status === 200;
-    } catch (error) {
-      this.logger.error('An error occurred while authenticating the user:', error);
-      throw new Error('An error occurred while authenticating the user.');
-    }
-  }
-
-  async getUsers(): Promise<iUser[]> {
+  async getUsers(): Promise<UserDto[]> {
     try {
       const res = await fetch(BASE_URL);
       if (!res.ok) {
@@ -48,7 +26,7 @@ export class UserService {
     }
   }
 
-  async getUserByName(name: string): Promise<UserDto | null> {
+  async getUserByName(name: string): Promise<UserDto[]> {
     try {
       const res = await fetch(BASE_URL);
       if (!res.ok) {
@@ -57,13 +35,36 @@ export class UserService {
         );
       }
       const allUsers = await res.json();
-      const foundUser = allUsers.find((usr) =>
-        usr.name.toLocaleLowerCase() === name.toLocaleLowerCase(),
+      const filteredByName = allUsers.filter((usr) =>
+        usr.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()),
       );
-      return foundUser || null; // Devuelve el usuario encontrado o null si no se encuentra ninguno
+      if (!filteredByName.length) {
+        throw new NotFoundException('Usuario no encontrado');
+      }
+      return filteredByName;
     } catch (error) {
       throw new BadRequestException(
         'Error al buscar usuarios por nombre',
+      );
+    }
+  }
+
+  async getUserByNameAndPassword(name: string, password: string): Promise<UserDto[]> {
+    try {
+      const res = await fetch(`${BASE_URL}?name=${name}&password=${password}`);
+      if (!res.ok) {
+        throw new BadRequestException(
+          'Error al obtener la lista de usuarios desde el servidor remoto',
+        );
+      }
+      const allUsers = await res.json();
+      if (allUsers.length === 0) {
+        throw new NotFoundException('Usuario no encontrado');
+      }
+      return allUsers;
+    } catch (error) {
+      throw new BadRequestException(
+        'Error al buscar usuarios por nombre y contraseña',
       );
     }
   }
@@ -86,17 +87,32 @@ export class UserService {
     }
   }
 
+  // private async setId(): Promise<number> {
+  //   try {
+  //     const users = await this.getUsers();
+  //     const id = users.pop().id+1;
+  //     return id;
+  //   } catch (error) {
+  //     throw new BadRequestException(
+  //       'Error al obtener el último ID de usuario',
+  //     );
+  //   }
+  // }
+
   private async setId(): Promise<number> {
     try {
       const users = await this.getUsers();
-      const id = users.pop().id + 1;
+      if (users.length === 0) {
+        return 1;
+      }
+      const lastUser = users[users.length - 1];
+      const id = parseInt(lastUser.email.split('@')[0]) + 1;
       return id;
     } catch (error) {
-      throw new BadRequestException(
-        'Error al obtener el último ID de usuario',
-      );
+      throw new BadRequestException('Error al obtener el último ID de usuario');
     }
   }
+
 
   async createUser(user: UserDto): Promise<UserDto> {
     try {
@@ -160,4 +176,3 @@ export class UserService {
     }
   }
 }
-
