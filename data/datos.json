@@ -22,9 +22,9 @@
       "description": "Encantadora casa en un vecindario tranquilo. Amplio jardín, perfecto para familias. Cerca de escuelas y parques.",
       "price": 2000,
       "images": [
+        "https://img.freepik.com/foto-gratis/casa-aislada-campo_1303-23773.jpg",
         "https://previews.123rf.com/images/4pmproduction/4pmproduction1708/4pmproduction170800246/83431696-pap%C3%A1-le-est%C3%A1-ense%C3%B1ando-a-su-hija-a-andar-en-bicicleta-la-madre-est%C3%A1-tomando-fotos-en-un-tel%C3%A9fono.jpg",
-        "imagen5.jpg",
-        "imagen6.jpg"
+        "https://img.freepik.com/fotos-premium/casa-nueva-techo-tejas-metal_124507-129644.jpg"
       ],
       "location": "456 Avenida Elm, Área Suburbana"
     },
@@ -37,8 +37,8 @@
       "price": 90,
       "images": [
         "https://plus.unsplash.com/premium_photo-1661954372617-15780178eb2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1460&q=80",
-        "imagen8.jpg",
-        "imagen9.jpg"
+        "https://img.freepik.com/foto-gratis/casa-aislada-campo_1303-23773.jpg",
+        "https://img.freepik.com/fotos-premium/casa-nueva-techo-tejas-metal_124507-129644.jpg"
       ],
       "location": "789 Calle Oak, Distrito Comercial"
     },
@@ -51,8 +51,8 @@
       "price": 3000,
       "images": [
         "https://media.architecturaldigest.com/photos/56314f05bf2db2f83856e4a7/master/w_1600%2Cc_limit/jackson-hole-wyoming-frank-lloyd-wright-inspired-home-for-sale-01.jpg",
-        "imagen11.jpg",
-        "imagen12.jpg"
+        "https://media.architecturaldigest.com/photos/56314f0bbf2db2f83856e4ab/master/w_320%2Cc_limit/jackson-hole-wyoming-frank-lloyd-wright-inspired-home-for-sale-03.jpg",
+        "https://media.architecturaldigest.com/photos/56314f17bf2db2f83856e4b3/master/w_320%2Cc_limit/jackson-hole-wyoming-frank-lloyd-wright-inspired-home-for-sale-07.jpg"
       ],
       "location": "1234 Calle Ocean, Área Costera"
     },
@@ -66,7 +66,7 @@
       "images": [
         "https://st.hzcdn.com/simgs/pictures/family-rooms/zen-beach-house-allen-construction-img~8041dcde06bb7426_8-0745-1-567a6f9.jpg",
         "https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg?auto=compress&cs=tinysrgb&w=1600imagen14.jpg",
-        "imagen15.jpg"
+        "https://st.hzcdn.com/simgs/pictures/patios/zen-beach-house-allen-construction-img~c5a1005d06bb745e_4-3401-1-a0d0cb9.jpg"
       ],
       "location": "567 Calle Histórica, Centro"
     },
@@ -77,13 +77,11 @@
       "rooms": 6,
       "description": "Casa grande con todas las comodidades y una piscina privada. Ideal para familias que disfrutan del aire libre.",
       "price": 2500,
-
       "images": [
         "https://images.pexels.com/photos/8143671/pexels-photo-8143671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "",
-        "imagen18.jpg"
+        "https://i.pinimg.com/originals/89/f6/c9/89f6c9268439cff8a663600bb6231260.jpg",
+        "https://i.pinimg.com/originals/35/58/69/3558699e61a5403f4916e2b244d722f4.jpg"
       ],
-
       "location": "789 Valle Verde, Área Suburbana"
     },
     {
@@ -93,7 +91,6 @@
       "rooms": 2,
       "description": "Apartamento amueblado en el corazón de la ciudad. Perfecto para estancias cortas y cómodas.",
       "price": 110,
-
       "images": [
         "https://images.pexels.com/photos/3825883/pexels-photo-3825883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imagen20.jpg",
@@ -108,7 +105,6 @@
       "rooms": 7,
       "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
       "price": 2800,
-
       "images": [
         "https://images.pexels.com/photos/2183521/pexels-photo-2183521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imagen23.jpg",
@@ -123,7 +119,6 @@
       "rooms": 1,
       "description": "Estudio con diseño único en el corazón del distrito cultural. Cerca de galerías de arte y teatros.",
       "price": 80,
-
       "images": [
         "https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80",
         "imagen26.jpg",
@@ -138,7 +133,6 @@
       "rooms": 4,
       "description": "Apartamento de lujo con acabados premium y comodidades modernas. Ubicado en una zona exclusiva.",
       "price": 3500,
-
       "images": [
         "https://img.freepik.com/foto-gratis/villa-lujo-piscina-espectacular-diseno-contemporaneo-arte-digital-bienes-raices-hogar-casa-propiedad-ge_1258-150749.jpg?w=1380&t=st=1695133039~exp=1695133639~hmac=e192164ddc7c8013d740564c9e53384f57bbbed7477ff4e306eb834f1d83e56c",
         "imagen29.jpg",
@@ -154,7 +148,6 @@
       "rooms": "7",
       "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
       "price": 2800,
-
       "images": [
         "https://media.istockphoto.com/id/487222011/es/foto/house-exterior-vista-de-la-entrada-del-garaje-porche-y.jpg?s=1024x1024&w=is&k=20&c=XVrF55A7rEzVVlqzhvLEU0Q2O6SVhXmdjDnoeIvKNmA=",
         "imagen23.jpg",
@@ -222,18 +215,6 @@
       ]
     },
     {
-      "id": 19,
-      "title": "123131231231",
-      "type": "Temporal",
-      "location": "Calle sin numero - Las Flores - Bs. As.",
-      "rooms": 5,
-      "description": "Casa tipo colonial con olor a tuco en la cocina",
-      "price": 1231231,
-      "images": [
-        "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_640.jpg"
-      ]
-    },
-    {
       "id": 20,
       "title": "casasdsad",
       "type": "Temporal",
@@ -241,7 +222,6 @@
       "rooms": 1,
       "description": "Casa tipo colonial con olor a tuco en la cocina",
       "price": 6,
-
       "images": [
         "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imagen2.jpg",
@@ -312,13 +292,6 @@
       "email": "CampeondelMundo@gmail.com",
       "phone": "+32569773456",
       "password": "1234"
-    },
-    {
-      "id": 11,
-      "name": "Wonder Woman",
-      "email": "wonder@gmail.com",
-      "phone": "+32569773456",
-      "password": "5678"
     },
     {
       "id": 12,
