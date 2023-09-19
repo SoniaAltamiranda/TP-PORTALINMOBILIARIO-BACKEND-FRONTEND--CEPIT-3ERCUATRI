@@ -18,7 +18,7 @@
       "id": 2,
       "title": "Casa Acogedora en un Vecindario Residencial",
       "type": "alquiler temporal",
-      "rooms": 5,
+      "rooms": 2,
       "description": "Encantadora casa en un vecindario tranquilo. Amplio jardín, perfecto para familias. Cerca de escuelas y parques.",
       "price": 2000,
       "images": [
@@ -189,6 +189,54 @@
       "images": [
         "https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FzYXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
       ]
+    },
+    {
+      "id": 17,
+      "title": "fassafssa",
+      "type": "Temporal",
+      "location": "Calle sin numero - Las Flores - Bs. As.",
+      "rooms": 1,
+      "description": "Hermosa cabaña en medio de la llanura pampeana...",
+      "price": 1235,
+      "images": [
+        "https://img.freepik.com/fotos-premium/exterior-casa-minimalista-ia-generativa_446633-6269.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "asdsasfsfa",
+      "type": "Permanente",
+      "location": "Las Flores",
+      "rooms": 3,
+      "description": "Loft moderno en el centro histórico de la ciudad. Diseño de vanguardia y cerca de puntos de interés cultural.",
+      "price": 12314212,
+      "images": [
+        "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_640.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "123131231231",
+      "type": "Temporal",
+      "location": "Calle sin numero - Las Flores - Bs. As.",
+      "rooms": 5,
+      "description": "Casa tipo colonial con olor a tuco en la cocina",
+      "price": 1231231,
+      "images": [
+        "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_640.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "casasdsad",
+      "type": "Temporal",
+      "location": "Calle sin numero - Las Flores - Bs. As.",
+      "rooms": 1,
+      "description": "Casa tipo colonial con olor a tuco en la cocina",
+      "price": 6,
+      "images": [
+        "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_640.jpg"
+      ]
     }
   ],
   "users": [
@@ -219,13 +267,6 @@
       "email": "OneP@gmail.com",
       "phone": "+32569774S56",
       "password": "1234"
-    },
-    {
-      "id": 5,
-      "name": "LeviArkeman",
-      "email": "acorazado@gmail.com",
-      "phone": "+32536977456",
-      "password": "uno"
     },
     {
       "id": 6,
@@ -261,6 +302,62 @@
       "email": "CampeondelMundo@gmail.com",
       "phone": "+32569773456",
       "password": "1234"
+    },
+    {
+      "id": 11,
+      "name": "Wonder Woman",
+      "email": "wonder@gmail.com",
+      "phone": "+32569773456",
+      "password": "5678"
+    },
+    {
+      "id": 12,
+      "name": "Tony Stark",
+      "email": "ironman@gmail.com",
+      "phone": "+32569773456",
+      "password": "7890"
+    },
+    {
+      "id": 13,
+      "name": "Harry Potter",
+      "email": "harry@gmail.com",
+      "phone": "+32569773456",
+      "password": "0987"
+    },
+    {
+      "id": 14,
+      "name": "Hermione Granger",
+      "email": "hermione@gmail.com",
+      "phone": "+32569773456",
+      "password": "7654"
+    },
+    {
+      "id": 15,
+      "name": "Jon Snow",
+      "email": "jonsnow@gmail.com",
+      "phone": "+32569773456",
+      "password": "4321"
+    },
+    {
+      "id": 16,
+      "name": "Princess Leia",
+      "email": "leia@gmail.com",
+      "phone": "+32569773456",
+      "password": "2468"
+    },
+    {
+      "id": 17,
+      "name": "Darth Vader",
+      "email": "vader@gmail.com",
+      "phone": "+32569773456",
+      "password": "1357"
+    },
+    {
+      "id": 18,
+      "name": "Frodo Baggins",
+      "email": "frodo@gmail.com",
+      "phone": "+32569773456",
+      "password": "6790"
     }
   ]
 }
