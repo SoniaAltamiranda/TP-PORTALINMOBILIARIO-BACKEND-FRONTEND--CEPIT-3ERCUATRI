@@ -6,11 +6,10 @@ import {
   Body,
   Delete,
   Put,
-  HttpCode,
-  Res,
   HttpStatus,
   ParseIntPipe,
-  Query
+  Query,
+  HttpCode
 } from '@nestjs/common';
 
 import { PropertyService } from './property.service';
@@ -50,7 +49,9 @@ export class PropertyController {
   }
 
   @Put('/:id')
-  modifyInmueble(@Param('id') id: number, @Body() propertyDto : PropertyDto): Promise<void> {
+  modifyInmueble(@Param('id', new ParseIntPipe({
+    errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE
+  })) id: number, @Body() propertyDto : PropertyDto): Promise<void> {
     return this.propertyService.modifyPropertyById(id, propertyDto);
   }
 }

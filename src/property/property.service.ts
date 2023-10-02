@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { Property } from './property.interface';
 import { PropertyDto } from './property.dto';
 
@@ -51,11 +51,11 @@ export class PropertyService {
   }
 
   async postProperty(property: PropertyDto): Promise<Property> {
+    console.log(property)
 
     try {
       const id = await this.setId();
-      const { title, type, location, rooms, description, price, images } =
-        property;
+      const { title, type, location, rooms, description, price, images } = property;
       const newProperty = { id, title, type, location, rooms, description, price, images };
       const res = await fetch(BASE_URL, {
         method: 'POST',
@@ -79,7 +79,9 @@ export class PropertyService {
         method: 'DELETE',
       });
       if (!res.ok) throw new BadRequestException(`La Propiedad con el ID:${id}, no existe.`);
-      return `Se ha eliminado la propiedad correctamente.`
+      return JSON.stringify({
+        message: `Se ha eliminado la propiedad correctamente.`
+      });
     }
     catch (error) {
       throw new BadRequestException(`La Propiedad con el ID:${id}, no existe.`);
@@ -102,11 +104,13 @@ export class PropertyService {
         body: JSON.stringify(modifiedProperty),
       });
       if (res.ok) {
-        return `La propiedad con el ID:${id} ha modificado correctamente`;
+        return JSON.stringify({
+          message: `La propiedad con el ID:${id} se ha modificado correctamente`
+        });
       }
     }
     catch (error) {
-      throw new BadRequestException(`No se pudo actualizar la propiedad con el ID:${id}.`)
+      throw new BadRequestException(`La propiedad con el ID: ${id} no existe.`)
     }
   }
 }
