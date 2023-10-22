@@ -5,42 +5,51 @@
       "title": "Hermoso Apartamento en el Centro",
       "type": "alquiler temporal",
       "rooms": 3,
-      "description": "Amplio apartamento en el corazón de la ciudad, ideal para vacaciones. Completamente amueblado con excelentes vistas.",
+      "description": "Amplio apartamento en el corazón de la ciudad, ideal para vacaciones. Totalmente amueblado con excelentes vistas.",
       "price": 120,
       "images": [
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzYSUyMG1vZGVybmF8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-        "image2.jpg",
-        "image3.jpg"
+        "https://plus.unsplash.com/premium_photo-1661902124877-f946ba1d3c1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
+        "https://images.unsplash.com/photo-1606074280798-2dabb75ce10c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1470&q=80",
+        "https://images.unsplash.com/photo-1560440021-33f9b867899d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1559&q=80"
       ],
-      "location": "Buenos Aires, Argentina"
+      "location": "Mendoza, Argentina.",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97454027064!2d-68.8585191!3d-32.8833352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1697057051012!5m2!1ses-419!2sar",
+      "id_propietor": 1,
+      "rate": 4
     },
     {
       "id": 2,
-      "title": "Acogedora Casa en Barrio Residencial",
+      "title": "Casa Acogedora en un Vecindario Residencial",
       "type": "alquiler a largo plazo",
       "rooms": 4,
-      "description": "Encantadora casa en un barrio tranquilo. Amplio jardín, perfecto para familias. Cerca de escuelas y parques.",
+      "description": "Encantadora casa en un vecindario tranquilo. Amplio jardín, perfecto para familias. Cerca de escuelas y parques.",
       "price": 2000,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1du4MBCb6HDHDvW7GtG41Ibu0tMFEfXvgsnV58-B&s",
-        "image5.jpg",
-        "image6.jpg"
+        "https://previews.123rf.com/images/4pmproduction/4pmproduction1708/4pmproduction170800246/83431696-pap%C3%A1-le-est%C3%A1-ense%C3%B1ando-a-su-hija-a-andar-en-bicicleta-la-madre-est%C3%A1-tomando-fotos-en-un-tel%C3%A9fono.jpg",
+        "imagen5.jpg",
+        "imagen6.jpg"
       ],
-      "location": "Córdoba, Argentina"
+      "location": "Capital Federal, Buenos Aires. Argentina",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1697057539764!5m2!1ses-419!2sar",
+      "id_propietor": 2,
+      "rate": 5
     },
     {
       "id": 3,
       "title": "Moderno Apartamento en Área Comercial",
       "type": "alquiler temporal",
       "rooms": 2,
-      "description": "Apartamento moderno cerca de tiendas y restaurantes. Completamente equipado con electrodomésticos de última generación.",
+      "description": "Apartamento moderno cerca de tiendas y restaurantes. Totalmente equipado con electrodomésticos de última generación.",
       "price": 90,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfPTzHhy8kUVZr7x-IwMJoyf4JTT8q0U9-Q&usqp=CAU",
-        "image8.jpg",
-        "image9.jpg"
+        "https://plus.unsplash.com/premium_photo-1661954372617-15780178eb2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1460&q=80",
+        "imagen8.jpg",
+        "imagen9.jpg"
       ],
-      "location": "Mendoza, Argentina"
+      "location": "Mendoza, Mendoza. Argentina.",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97454027064!2d-68.8585191!3d-32.8833352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1697057051012!5m2!1ses-419!2sar",
+      "id_propietor": 3,
+      "rate": 3
     },
     {
       "id": 4,
@@ -50,11 +59,14 @@
       "description": "Elegante piso con habitaciones espaciosas y vistas espectaculares al mar. Incluye estacionamiento privado.",
       "price": 3000,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJyqVx9PviD1rqIsUhLtHRVFDAbv6DOVm8Q&usqp=CAU",
-        "image11.jpg",
-        "image12.jpg"
+        "https://media.architecturaldigest.com/photos/56314f05bf2db2f83856e4a7/master/w_1600%2Cc_limit/jackson-hole-wyoming-frank-lloyd-wright-inspired-home-for-sale-01.jpg",
+        "imagen11.jpg",
+        "imagen12.jpg"
       ],
-      "location": "Mar del Plata, Argentina"
+      "location": "Mendoza, Argentina.",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97454027064!2d-68.8585191!3d-32.8833352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1697057051012!5m2!1ses-419!2sar",
+      "id_propietor": 4,
+      "rate": 4
     },
     {
       "id": 5,
@@ -64,11 +76,31 @@
       "description": "Loft moderno en el centro histórico de la ciudad. Diseño de vanguardia y cerca de puntos de interés cultural.",
       "price": 75,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8FN_4KcJsDgfzwA7iEtshe08ndK9yp_ZEQ&usqp=CAU",
-        "image14.jpg",
-        "image15.jpg"
+        "https://st.hzcdn.com/simgs/pictures/family-rooms/zen-beach-house-allen-construction-img~8041dcde06bb7426_8-0745-1-567a6f9.jpg",
+        "imagen14.jpg",
+        "imagen15.jpg"
       ],
-      "location": "Mendoza, Argentina"
+      "location": "Capital Federal, Buenos Aires, Argentina.",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1697057539764!5m2!1ses-419!2sar",
+      "id_propietor": 5,
+      "rate": 4
+    },
+    {
+      "id": 6,
+      "title": "Casa Espaciosa con Piscina",
+      "type": "alquiler a largo plazo",
+      "rooms": 6,
+      "description": "Casa grande con todas las comodidades y una piscina privada. Ideal para familias que disfrutan del aire libre.",
+      "price": 2500,
+      "images": [
+        "https://www.planosde.net/wp-content/uploads/2020/12/Fachada-de-casa-tipo-rancho.jpg",
+        "imagen17.jpg",
+        "imagen18.jpg"
+      ],
+      "location": "Magdalena. Buenos Aires. Argentina",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417376.7596220385!2d-57.66977045!3d-35.18763519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959881bb9e7ffb0f%3A0x679b31358ff338be!2sMagdalena%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697057697084!5m2!1ses-419!2sar",
+      "id_propietor": 6,
+      "rate": 5
     },
     {
       "id": 7,
@@ -78,11 +110,14 @@
       "description": "Apartamento amueblado en el corazón de la ciudad. Perfecto para estancias cortas y cómodas.",
       "price": 110,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjo5GGlH4cxVGufP2XRTrIRvH4DUxaO07SzQ&usqp=CAU",
-        "image20.jpg",
-        "image21.jpg"
+        "imagen19.jpg",
+        "imagen20.jpg",
+        "imagen21.jpg"
       ],
-      "location": "Salta, Argentina"
+      "location": "Magdalena, Buenos Aires. Argentina",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417376.7596220385!2d-57.66977045!3d-35.18763519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959881bb9e7ffb0f%3A0x679b31358ff338be!2sMagdalena%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697057697084!5m2!1ses-419!2sar",
+      "id_propietor": 7,
+      "rate": 4
     },
     {
       "id": 8,
@@ -92,11 +127,14 @@
       "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
       "price": 2800,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzybr6iQ3hgSdQSyBR1DmXlXf0i_M_rGeKVQ&usqp=CAU",
-        "image23.jpg",
-        "image24.jpg"
+        "imagen22.jpg",
+        "imagen23.jpg",
+        "imagen24.jpg"
       ],
-      "location": "Bariloche, Argentina"
+      "location": "Mar del Plata, Buenos Aires. Argentina",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.05461794484!2d-57.60053405!3d-38.01756665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697058182760!5m2!1ses-419!2sar",
+      "id_propietor": 8,
+      "rate": 5
     },
     {
       "id": 9,
@@ -106,88 +144,127 @@
       "description": "Estudio con diseño único en el corazón del distrito cultural. Cerca de galerías de arte y teatros.",
       "price": 80,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmyjQf4jgiDSp5WMv51rX_aOxPJ9CX6D1XA&usqp=CAU",
-        "image26.jpg",
-        "image27.jpg"
+        "imagen25.jpg",
+        "imagen26.jpg",
+        "imagen27.jpg"
       ],
-      "location": "Salta, Argentina"
+      "location": "Capital Federal, Buenos Aires, Argentina.",
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1697057539764!5m2!1ses-419!2sar",
+      "id_propietor": 9,
+      "rate": 4
     },
     {
       "id": 11,
-      "title": "Apartamento de Lujo en Área Exclusiva",
+      "title": "Chalet en las Afueras",
       "type": "alquiler a largo plazo",
-      "rooms": 4,
-      "description": "Apartamento de lujo con acabados de primera y comodidades modernas. Ubicado en una zona exclusiva.",
-      "price": 3500,
+      "location": "456 Camino de la Montaña, Afueras",
+      "rooms": 7,
+      "description": "Encantador chalet en un entorno tranquilo. Amplio jardín y vistas panorámicas de la naturaleza circundante.",
+      "price": 2800,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4whCiqfHUu3ivUT4xHhjqpBDTmnYqc6sBAw&usqp=CAU",
-        "image.jpg",
-        "image.jpg"
+        "imagen22.jpg",
+        "imagen23.jpg",
+        "imagen24.jpg"
       ],
-      "location": "Neuquén, Argentina"
+      "url_iframe": "https://example.com/iframe11",
+      "id_propietor": 6,
+      "rate": 4
+    },
+    {
+      "id": 12,
+      "title": "La Casa de Milhouse",
+      "type": "alquiler temporal",
+      "location": "Las Flores, Buenos Aires. Argentina.",
+      "rooms": 5,
+      "description": "Amplio apartamento en el corazón de la ciudad, ideal para vacaciones. Totalmente amueblado con excelentes vistas.",
+      "price": 120,
+      "images": [
+        "imagen1.jpg",
+        "imagen2.jpg",
+        "imagen3.jpg"
+      ],
+      "url_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51639.59303061964!2d-59.09519054999999!3d-36.0087031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959635293797eb09%3A0x37727efde49396ee!2sLas%20Flores%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697058472501!5m2!1ses-419!2sar",
+      "id_propietor": 7,
+      "rate": 3
     }
-
   ],
   "users": [
     {
       "id": 1,
-      "name": "Black Panther",
-      "email": "WPS@yahoo.com",
-      "phone": "+145828582424242"
+      "name": "Black Panther 2",
+      "email": "WPoSiempre@yahoo.com",
+      "phone": "+1458285242",
+      "password": "1234"
     },
     {
       "id": 2,
       "name": "Rick Sanchez",
       "email": "rick@gmail.com",
-      "phone": "+222298222222"
+      "phone": "+222298222222",
+      "password": "2345"
     },
     {
       "id": 3,
       "name": "Uzumaki Naruto",
       "email": "7moHoka@gmail.com",
-      "phone": "+3256977456"
+      "phone": "+3256977456",
+      "password": "1234"
     },
     {
       "id": 4,
       "name": "Monkey D. Luffy",
       "email": "OneP@gmail.com",
-      "phone": "+32569774S56"
+      "phone": "+32569774S56",
+      "password": "1234"
     },
     {
       "id": 5,
       "name": "Levi Arkeman",
       "email": "acorazado@gmail.com",
-      "phone": "+32536977456"
+      "phone": "+32536977456",
+      "password": "uno"
     },
     {
       "id": 6,
       "name": "Eren Yeager",
       "email": "ErenY@gmail.com",
-      "phone": "+3256977456"
+      "phone": "+3256977456",
+      "password": "1234"
     },
     {
       "id": 7,
       "name": "Oliver Atom",
       "email": "elbalonesmiamigo@gmail.com",
-      "phone": "+32569747456"
+      "phone": "+32569747456",
+      "password": "1234"
     },
     {
       "id": 8,
       "name": "Sherlock Holmes",
       "email": "irene@gmail.com",
-      "phone": "+32569773456"
+      "phone": "+32569773456",
+      "password": "1234"
     },
     {
       "id": 9,
       "name": "Jhon Watson",
-      "email": "221BBakerStreet@gmail.com",
-      "phone": "+32956977456"
+      "email": "212B@gmail.com",
+      "phone": "+32569773456",
+      "password": "1234"
     },
     {
       "id": 10,
-      "name": "Namikaze Minato",
-      "email": "relampagoamarillo@gmail.com",
-      "phone": "+32569767456"
+      "name": "Lionel Andres Messi",
+      "email": "CampeondelMundo@gmail.com",
+      "phone": "+32569773456",
+      "password": "1234"
+    },
+    {
+      "id": 11,
+      "name": "Eric Schenone",
+      "email": "7moHoka@gmail.com",
+      "phone": "+3256977456",
+      "password": "1234"
     }
   ]
 }

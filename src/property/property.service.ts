@@ -55,8 +55,8 @@ export class PropertyService {
 
     try {
       const id = await this.setId();
-      const { title, type, location, rooms, description, price, images } = property;
-      const newProperty = { id, title, type, location, rooms, description, price, images };
+      const { title, type, location, rooms, description, price, images, url_iframe, id_propietor, rate } = property;
+      const newProperty = { id, title, type, location, rooms, description, price, images, url_iframe, id_propietor, rate};
       const res = await fetch(BASE_URL, {
         method: 'POST',
         headers: {

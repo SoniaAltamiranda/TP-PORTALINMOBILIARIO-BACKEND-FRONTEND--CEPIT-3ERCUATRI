@@ -25,7 +25,15 @@ export class UserController {
     return this.userService.getUserByName(name); //tengo que pasar el query param NAME
   }
 
-  @Get('/:id') //inyectamos el parametro id
+  @Get()
+async getUsersByNameAndPassword(@Query('name') name?: string, @Query('password') password?: string): Promise<UserDto[]> {
+  if (!name || !password) {
+    return this.userService.getUsers();
+  }
+  return this.userService.getUserByNameAndPassword(name, password);
+}
+
+  @Get('/:id')
   async getUserById(
     @Param(
       'id',
